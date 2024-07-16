@@ -1,0 +1,53 @@
+{
+  "kind": "collectionType",
+  "collectionName": "meta_users",
+  "info": {
+    "singularName": "meta-user",
+    "pluralName": "meta-users",
+    "displayName": "MetaUser",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "userName": {
+      "type": "string",
+      "required": true
+    },
+    "userEmail": {
+      "type": "email",
+      "required": true,
+      "unique": true
+    },
+    "tel": {
+      "type": "biginteger",
+      "required": true
+    },
+    "userPass": {
+      "type": "password",
+      "required": true
+    },
+    "t21": {
+      "displayName": "asd",
+      "type": "component",
+      "repeatable": true,
+      "component": "asd.asd"
+    },
+    "test": {
+      "type": "enumeration",
+      "enum": [
+        "food",
+        "player",
+        "user"
+      ]
+    },
+    "orders": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::order.order",
+      "mappedBy": "meta_users"
+    }
+  }
+}

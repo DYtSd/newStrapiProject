@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sponsor_details",
+  "info": {
+    "singularName": "sponsor-detail",
+    "pluralName": "sponsor-details",
+    "displayName": "SponsorDetail",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "SponsorIcon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "sponsorName": {
+      "type": "string"
+    },
+    "sponsorNameURL": {
+      "type": "string"
+    },
+    "DonateAmount": {
+      "type": "string"
+    },
+    "DonatePurpose": {
+      "type": "string"
+    },
+    "DonatePurposeUrl": {
+      "type": "string"
+    },
+    "DonateDate": {
+      "type": "string"
+    }
+  }
+}
